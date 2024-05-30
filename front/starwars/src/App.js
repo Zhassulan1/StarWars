@@ -1,13 +1,19 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/header";
+import Home from "./components/home";
+import Planets from "./components/planets";
+import PlanetDetail from "./components/planet-detail";
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/planets" element={<Planets />} />
+        <Route path="/planets/:id" element={<PlanetDetail />} />
         
-      </header>
-    </div>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
