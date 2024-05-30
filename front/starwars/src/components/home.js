@@ -13,7 +13,8 @@ class Home extends React.Component {
     render(){
         return (
             <>
-            <Header></Header>
+                <Header />
+                This is site about Star Wars. Here you can find information about planets in Star Wars universe.
             </>
         )
     }

@@ -5,16 +5,16 @@ const Header = () => {
     <>
       <nav>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
+          <li className="header-item">
+            <Link className="header-item-text" to="/">Home</Link>
           </li>
           
-          <li>
-            <Link to="/planets">Planets</Link>
+          <li className="header-item">
+            <Link className="header-item-text" to="/planets">Planets</Link>
           </li>
 
-          <li>
-            <Link to="/search">Search</Link>
+          <li className="header-item">
+            <Link className="header-item-text" to="/search">Search</Link>
           </li>
 
           {/* <li>

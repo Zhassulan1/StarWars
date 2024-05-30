@@ -3,7 +3,7 @@ import axios from "axios";
 
 import Header from "./header";
 import React from "react";
-import styles from './home.css'
+import styles from './styles.css'
 
 
 const BASE_URL = "https://swapi.dev/api/";
