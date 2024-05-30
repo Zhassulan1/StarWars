@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/header";
+
 import Home from "./components/home";
 import Planets from "./components/planets";
 import PlanetDetail from "./components/planet-detail";
@@ -10,8 +10,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/planets" element={<Planets />} />
-        <Route path="/planets/:id" element={<PlanetDetail />} />
+        <Route path="/planets/" element={<Planets />} />
+        <Route exact  path="/planets/:id/" element={ <PlanetDetail />} />
         
       </Routes>
     </BrowserRouter>
