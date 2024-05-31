@@ -5,10 +5,31 @@ const Header = () => {
     <>
       <nav>
         <ul>
+          
           <li className="header-item">
             <Link className="header-item-text" to="/">Home</Link>
           </li>
           
+          <li className="header-item">
+            <Link className="header-item-text" to="/films">Films</Link>
+          </li>
+          
+          <li className="header-item">
+            <Link className="header-item-text" to="/people">People</Link>
+          </li>
+
+          <li className="header-item">
+            <Link className="header-item-text" to="/starships">Starships</Link>
+          </li>
+          
+          <li className="header-item">
+            <Link className="header-item-text" to="/vehicles">Vehicles</Link>
+          </li>
+          
+          <li className="header-item">
+            <Link className="header-item-text" to="/species">Species</Link>
+          </li>
+
           <li className="header-item">
             <Link className="header-item-text" to="/planets">Planets</Link>
           </li>
@@ -17,22 +38,6 @@ const Header = () => {
             <Link className="header-item-text" to="/search">Search</Link>
           </li>
 
-          {/* <li>
-            <Link to="/people">People</Link>
-          </li> */}
-
-
-          {/* <li>
-            <Link to="/species">Species</Link>
-          </li> */}
-
-          {/* <li>
-            <Link to="/starships">Starships</Link>
-          </li> */}
-
-          {/* <li>
-            <Link to="/vehicles">vehicles</Link>
-          </li> */}
         </ul>
       </nav>
 

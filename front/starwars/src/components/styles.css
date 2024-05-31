@@ -64,14 +64,14 @@ ul {
 }
 
 
-.planet-detail-container {
+.detail-container {
     margin: auto;
     text-align: center;
     justify-content: center;
 }
 
 
-.planet-detail {
+.detail {
     text-align:left;
     width: 30%;
 }

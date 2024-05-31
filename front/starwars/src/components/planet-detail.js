@@ -2,11 +2,11 @@ import { Outlet, Link, useParams } from "react-router-dom";
 import axios from "axios";
 
 import Header from "./header";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from './styles.css'
 
 
-const BASE_URL = "https://swapi.dev/api/";
+const BASE_URL = "http://localhost:3001/api/";
 
 
 function PlanetDetail() {
@@ -15,16 +15,19 @@ function PlanetDetail() {
     let planetId = params.id;
 
     const [info, setInfo] = useState({})
-    axios.get(`${BASE_URL}planets/${planetId}/`).then((res) => {
-        setInfo(res.data)
-    })
+    useEffect(() => {
+
+        axios.get(`${BASE_URL}planets/${planetId}/`).then((res) => {
+            setInfo(res.data)
+        })
+    }, [planetId])
 
     // console.log(info)
     return (
         <>
             <Header />
-            <div className="planet-detail-container">
-                <div className="planet-detail">
+            <div className="detail-container">
+                <div className="detail">
                     Planet: {info.name} <br />
                     Rotation period (hours): {info.rotation_period} <br />
                     Orbital period (days): {info.orbital_period} <br />
