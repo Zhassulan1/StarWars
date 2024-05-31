@@ -39,7 +39,7 @@ ul {
 
 .header-item {
     text-decoration: none;
-    color: black;
+    color: yellow;
 
     margin: 10px;
     width: 10%;
@@ -55,7 +55,7 @@ ul {
 
 .header-item-text {
     text-decoration: none;
-    color: black;
+    color: yellow;
 }
 
 .header-item-text:hover {
@@ -82,10 +82,48 @@ li {
     color: black;
 }
 
+
+.search-field-container {
+    text-decoration: none;
+    color: yellow;
+
+    margin: 10px;
+    width:fit-content;
+    display: inline-flex;
+    flex-direction: column;
+    outline: none;
+    vertical-align: top;
+}
+
 .search-field {
     text-align: left;
     border: none;
     border-radius: 0%;
     outline: none;
     cursor: pointer;
+}
+
+.header-container {
+    background-color: black;
+}
+
+
+.home-icon-container {
+    text-decoration: none;
+    color: black;
+
+    margin: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 6%;
+}
+
+.home-icon {
+    max-width: 100%;
+}
+
+
+
+.search-icon {
+    max-width: 100%;
 }

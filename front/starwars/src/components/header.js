@@ -16,11 +16,15 @@ class Header extends React.Component {
   render() {
     return (
       <>
+      <div className="header-container">
+
         <nav>
           <ul>
             
-            <li className="header-item">
-              <Link className="header-item-text" to="/">Home</Link>
+            <li className="home-icon-container">
+              <Link to="/">
+                <img className="home-icon" src="https://lumiere-a.akamaihd.net/v1/images/sw_logo_stacked_2x-52b4f6d33087_7ef430af.png?region=0,0,586,254" alt="logo" />
+              </Link>
             </li>
             
             <li className="header-item">
@@ -47,10 +51,12 @@ class Header extends React.Component {
               <Link className="header-item-text" to="/planets">Planets</Link>
             </li>
 
-            <li className="header-item">
+            <li className="search-field-container">
               <form>
                 <input className="search-field" type="search"  placeholder="Search" onChange={(e) => this.setState({query: e.target.value})} />
-                <button className="search-button" type="button" onClick={event =>  window.location.href=`/search?query=${this.state.query}`}>Search</button>
+                <button className="search-button" type="button" onClick={event =>  window.location.href=`/search?query=${this.state.query}`}>
+                  Search
+                </button>
               </form>
               
             </li>
@@ -58,6 +64,7 @@ class Header extends React.Component {
           </ul>
         </nav>
 
+        </div>
         <Outlet />
       </>
     )
