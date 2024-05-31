@@ -81,3 +81,11 @@ li {
     text-decoration: none;
     color: black;
 }
+
+.search-field {
+    text-align: left;
+    border: none;
+    border-radius: 0%;
+    outline: none;
+    cursor: pointer;
+}

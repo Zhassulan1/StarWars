@@ -34,6 +34,15 @@ app.get('/api/:item/:itemId', (request, response) => {
 })
 
 
+// Search
+app.get('/api/:item/search/:query', (request, response) => {
+    axios.get(`${BASE_URL}${request.params.item}/?search=${request.params.query}`).then((res) => {
+        response.send(res.data);
+        console.log(`GET api/${request.params.item}/search/${request.params.query}`);
+        response.end();
+    })
+})
+
 
 
 

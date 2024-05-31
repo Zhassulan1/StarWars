@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 import Home from "./components/home";
 import People from "./components/people";
@@ -36,6 +37,7 @@ export default function App() {
         <Route exact  path="/vehicles/:id/" element={ <VehicleDetail />} />
         <Route exact  path="/species/:id/" element={ <SpeciesDetail />} />
         <Route exact  path="/planets/:id/" element={ <PlanetDetail />} />
+        <Route path="*" element={<Navigate to="/" replace={true} />} />
 
         <Route path="/search/" element={<Search />} />
       </Routes>
