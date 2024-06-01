@@ -59,9 +59,11 @@ class People extends React.Component {
                     {
                         this.state.people.map((person) => {
                             return (
-                                <li key={person.url} className="item">
-                                    <Link className="item-text" to={`/people/${person.url.slice(29)}`}>{person.name}</Link>
-                                </li>
+                                <Link className="item-text" to={`/people/${person.url.slice(29)}`}>
+                                    <li key={person.url} className="item">
+                                        {person.name}
+                                    </li>
+                                </Link>
                             )
                         })
                     }

@@ -35,7 +35,7 @@
 .crawl {
     position: relative;
     top: 999px;
-    transform-origin: 50% 100%;
+    transform-origin: -10% 100%;
     animation: crawl 60s linear;
     animation-iteration-count: infinite;
 }
@@ -47,7 +47,7 @@
 
 .crawl > .title h1 {
     margin: 0 0 100px;
-    text-transform: uppercase;
+    text-transform:uppercase;
 }
 
 @keyframes crawl {
@@ -56,7 +56,7 @@
         transform: rotateX(20deg)  translateZ(0);
     }
     100% { 
-        top: -7000px;
-        transform: rotateX(25deg) translateZ(-2500px);
+        top: -13000px;
+        transform: rotateX(30deg) translateZ(-2500px);
     }
 }

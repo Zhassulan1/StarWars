@@ -22,7 +22,4 @@
     color: rgb(255, 238, 0);
 }
 
-.item-text:hover {
-    opacity: 80%;
-    background-color: rgba(65, 90, 230, 0.281);
-}
+

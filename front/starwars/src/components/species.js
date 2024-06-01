@@ -46,9 +46,11 @@ class species extends React.Component {
                     {
                         this.state.species.map((kind) => {
                             return (
-                                <li key={kind.url} className="item">
-                                    <Link className="item-text" to={`/species/${kind.url.slice(30)}`}>{kind.name}</Link>
-                                </li>
+                                <Link className="item-text" to={`/species/${kind.url.slice(30)}`}>
+                                    <li key={kind.url} className="item">
+                                        {kind.name}
+                                    </li>
+                                </Link>
                             )
                         })
                     }

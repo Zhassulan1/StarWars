@@ -6,6 +6,27 @@
 
 
 .detail {
-    text-align:left;
+    margin: auto;
+    text-align:center;
     width: 30%;
+}
+
+.details-property-paragraph {
+    text-align: left;
+    font-family: 'Pathway Gothic One', sans-serif;
+    margin: 10px;
+    vertical-align: middle;
+    background-color: black;
+    display: flex;
+}
+
+.property-name {
+    vertical-align: middle;
+    text-align: left;
+}
+
+
+.property-value {
+    text-align: right;
+    vertical-align: middle;
 }

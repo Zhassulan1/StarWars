@@ -46,9 +46,11 @@ class Vehicles extends React.Component {
                     {
                         this.state.vehicles.map((vehicle) => {
                             return (
-                                <li key={vehicle.url} className="item">
-                                    <Link className="item-text" to={`/vehicles/${vehicle.url.slice(31)}`}>{vehicle.name}</Link>
-                                </li>
+                                <Link className="item-text" to={`/vehicles/${vehicle.url.slice(31)}`}>
+                                    <li key={vehicle.url} className="item">
+                                        {vehicle.name}
+                                    </li>
+                                </Link>
                             )
                         })
                     }

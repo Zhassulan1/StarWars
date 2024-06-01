@@ -38,9 +38,11 @@ class Films extends React.Component {
                     {
                         this.state.films.map((film) => {
                             return (
-                                <li key={film.url} className="item">
-                                    <Link className="item-text" to={`/films/${film.url.slice(28)}`}>{film.title}</Link>
-                                </li>
+                                <Link className="item-text" to={`/films/${film.url.slice(28)}`}>
+                                    <li key={film.url} className="item">
+                                        {film.title}
+                                    </li>
+                                </Link>
                             )
                         })
                     }

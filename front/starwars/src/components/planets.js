@@ -51,9 +51,11 @@ class Planets extends React.Component {
                     {
                         this.state.planets.map((planet) => {
                             return (
-                                <li key={planet.url} className="item">
-                                    <Link className="item-text" to={`/planets/${planet.url.slice(30)}`}>{planet.name}</Link>
-                                </li>
+                                <Link className="item-text" to={`/planets/${planet.url.slice(30)}`}>
+                                    <li key={planet.url} className="item">
+                                        {planet.name}
+                                    </li>
+                                </Link>
                             )
                         })
                     }

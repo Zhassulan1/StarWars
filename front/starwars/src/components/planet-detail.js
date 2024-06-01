@@ -28,15 +28,72 @@ function PlanetDetail() {
             <Background />
             <div className="detail-container">
                 <div className="detail">
-                    Planet: {info.name} <br />
-                    Rotation period (hours): {info.rotation_period} <br />
-                    Orbital period (days): {info.orbital_period} <br />
-                    Diameter (meters): {info.diameter} <br />
-                    Climate: {info.climate} <br />
-                    Gravity: {info.gravity} <br />
-                    Terrain: {info.terrain} <br />
-                    Surface covered with water or ice (%): {info.surface_water} <br />
-                    Population: {info.population} <br />
+                    <h1> Planet: {info.name} </h1>
+
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Rotation period (hours): 
+                        </div>
+                        <div className="property-value">
+                            {info.rotation_period} 
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Orbital period (days): 
+                        </div>
+                        <div className="property-value">
+                            {info.orbital_period} 
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Diameter (meters): 
+                        </div>
+                        <div className="property-value">
+                            {info.diameter} 
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Climate: 
+                        </div>
+                        <div className="property-value">
+                            {info.climate} 
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Gravity: 
+                        </div>
+                        <div className="property-value">
+                            {info.gravity} 
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Terrain: 
+                        </div>
+                        <div className="property-value">
+                            {info.terrain} 
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Surface covered with water or ice (%): 
+                        </div>
+                        <div className="property-value">
+                            {info.surface_water} 
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Population: 
+                        </div>
+                        <div className="property-value">
+                            {info.population} 
+                        </div>
+                    </div>
 
                 </div>
             </div>

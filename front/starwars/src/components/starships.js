@@ -46,9 +46,11 @@ class starships extends React.Component {
                     {
                         this.state.starships.map((starship) => {
                             return (
-                                <li key={starship.url} className="item">
-                                    <Link className="item-text" to={`/starships/${starship.url.slice(32)}`}>{starship.name}</Link>
-                                </li>
+                                <Link className="item-text" to={`/starships/${starship.url.slice(32)}`}>
+                                    <li key={starship.url} className="item">
+                                        {starship.name}
+                                    </li>
+                                </Link>
                             )
                         })
                     }
