@@ -8,7 +8,7 @@
     z-index: 2;
     position: relative;
     width: 100%;
-    min-height: 50vh;
+    min-height: 35vh;
     top: -100px;
     background-image: linear-gradient(0deg, transparent, black 75%);
 }

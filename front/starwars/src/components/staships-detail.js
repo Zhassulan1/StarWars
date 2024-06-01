@@ -27,19 +27,103 @@ function StarshipDetail() {
             <Background />
             <div className="detail-container">
                 <div className="detail">
-                    Starship: {info.name} <br />
-                    Model: {info.model} <br />
-                    Manufacturer: {info.manufacturer} <br />
-                    Cost in credits: {info.cost_in_credits} <br />
-                    Length: {info.length} <br />
-                    Max atmosphering speed: {info.max_atmosphering_speed} <br />
-                    Crew: {info.crew} <br />
-                    Passengers: {info.passengers} <br />
-                    Cargo capacity: {info.cargo_capacity} <br />
-                    Consumables: {info.consumables} <br />
-                    Hyperdrive rating: {info.hyperdrive_rating} <br />
-                    MGLT: {info.MGLT} <br />
-                    Starship class: {info.starship_class} <br />
+                    <h1> Starship: {info.name} </h1>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Model: 
+                        </div>
+                        <div className="property-value">
+                            {info.model}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Manufacturer: 
+                        </div>
+                        <div className="property-value">
+                            {info.manufacturer}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Cost in credits: 
+                        </div>
+                        <div className="property-value">
+                            {info.cost_in_credits}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Length: 
+                        </div>
+                        <div className="property-value">
+                            {info.length}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Max atmosphering speed: 
+                        </div>
+                        <div className="property-value">
+                            {info.max_atmosphering_speed}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Crew: 
+                        </div>
+                        <div className="property-value">
+                            {info.crew}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Passengers: 
+                        </div>
+                        <div className="property-value">
+                            {info.passengers}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Cargo capacity: 
+                        </div>
+                        <div className="property-value">
+                            {info.cargo_capacity}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Consumables: 
+                        </div>
+                        <div className="property-value">
+                            {info.consumables}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Hyperdrive rating: 
+                        </div>
+                        <div className="property-value">
+                            {info.hyperdrive_rating}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            MGLT: 
+                        </div>
+                        <div className="property-value">
+                            {info.MGLT}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Starship class: 
+                        </div>
+                        <div className="property-value">
+                            {info.starship_class}
+                        </div>
+                    </div>
 
                 </div>
             </div>

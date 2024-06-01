@@ -26,14 +26,63 @@ function PeopleDetail() {
             <Background />
             <div className="detail-container">
                 <div className="detail">
-                    Person: {info.name} <br />
-                    Height (cm): {info.height} <br />
-                    Mass: {info.mass} <br />
-                    Hair color: {info.hair_color} <br />
-                    Skin color: {info.skin_color} <br />
-                    Eye color: {info.eye_color} <br />
-                    Birth year: {info.birth_year} <br />
-                    Gender: {info.gender} <br />
+                    <h1> Person: {info.name} </h1>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Height (cm): 
+                        </div>
+                        <div className="property-value">
+                            {info.height}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Mass: 
+                        </div>
+                        <div className="property-value">
+                            {info.mass}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Hair color: 
+                        </div>
+                        <div className="property-value">
+                            {info.hair_color}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Skin color: 
+                        </div>
+                        <div className="property-value">
+                            {info.skin_color}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Eye color: 
+                        </div>
+                        <div className="property-value">
+                            {info.eye_color}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Birth year: 
+                        </div>
+                        <div className="property-value">
+                            {info.birth_year}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Gender: 
+                        </div>
+                        <div className="property-value">
+                            {info.gender}
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

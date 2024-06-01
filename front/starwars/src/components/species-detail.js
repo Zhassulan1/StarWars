@@ -28,15 +28,71 @@ function SpeciesDetail() {
             <Background />
             <div className="detail-container">
                 <div className="detail">
-                    Kind: {info.name} <br />
-                    Language: {info.language} <br />
-                    Classification: {info.classification} <br />
-                    Designation: {info.designation} <br />
-                    Average height: {info.average_height} <br />
-                    Skin colors: {info.skin_colors} <br />
-                    Hair colors: {info.hair_colors} <br />
-                    Eye colors: {info.eye_colors} <br />
-                    Average lifespan: {info.average_lifespan} <br />
+                    <h1> Kind: {info.name} </h1>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Language: 
+                        </div>
+                        <div className="property-value">
+                            {info.language}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Classification: 
+                        </div>
+                        <div className="property-value">
+                            {info.classification}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Designation: 
+                        </div>
+                        <div className="property-value">
+                            {info.designation}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Average height: 
+                        </div>
+                        <div className="property-value">
+                            {info.average_height}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Skin colors: 
+                        </div>
+                        <div className="property-value">
+                            {info.skin_colors}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Hair colors: 
+                        </div>
+                        <div className="property-value">
+                            {info.hair_colors}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Eye colors: 
+                        </div>
+                        <div className="property-value">
+                            {info.eye_colors}
+                        </div>
+                    </div>
+                    <div className="details-property-paragraph">
+                        <div className="property-name">
+                            Average lifespan: 
+                        </div>
+                        <div className="property-value">
+                            {info.average_lifespan}
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
