@@ -5,9 +5,8 @@ import { useState } from "react";
 
 import Header from "./header";
 import Background from "./background";
+import {BASE_URL} from "./base_url"
 
-
-const BASE_URL = "http://localhost:3001/api/";
 
 function Search() {
     const [searchParams, setSearchParams] = useSearchParams();

@@ -5,10 +5,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./header";
 import Background from "./background";
 import PersonName from "./person-name";
-
-
-const BASE_URL = "http://localhost:3001/api/";
-
+import {BASE_URL} from "./base_url"
 
 function FilmDetail() {
 

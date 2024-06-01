@@ -4,8 +4,7 @@ import axios from "axios";
 
 import Header from "./header";
 import Background from "./background";
-
-const BASE_URL = "http://localhost:3001/api/";
+import {BASE_URL} from "./base_url"
 
 
 function VehicleDetail() {

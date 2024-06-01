@@ -1,9 +1,8 @@
 import { Outlet, Link, useParams } from "react-router-dom";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import {BASE_URL} from "./base_url"
 
-
-const BASE_URL = "http://localhost:3001/api/";
 
 function PersonName({character}) {
     const [info, setInfo] = useState({})

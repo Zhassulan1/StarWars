@@ -4,9 +4,8 @@ import axios from "axios";
 
 import Header from "./header";
 import Background from "./background";
+import {BASE_URL} from "./base_url"
 
-
-const BASE_URL = "http://localhost:3001/api/";
 
 class Vehicles extends React.Component {  
     constructor(props) {

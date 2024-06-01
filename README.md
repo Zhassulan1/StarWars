@@ -12,6 +12,9 @@
 cd StarWars
 npm install
 cd front/starwars
+npm i react
+npm i react-router
+npm i react-router-dom
 npm start
 ```
 

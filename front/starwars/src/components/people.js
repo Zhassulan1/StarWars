@@ -5,8 +5,7 @@ import React from "react";
 
 import Header from "./header";
 import Background from "./background";
-
-const BASE_URL = "http://localhost:3001/api/";
+import {BASE_URL} from "./base_url"
 
 class People extends React.Component {  
     constructor(props) {
