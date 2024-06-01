@@ -1,0 +1,114 @@
+.header-container {
+    z-index: 4;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(0deg, transparent, black 20%);
+}
+
+
+.header-item {
+    z-index: 4;
+    text-decoration: none;
+    color: yellow;
+
+    margin: 10px;
+    width: 10%;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(36, 42, 63, 0.705);
+    vertical-align: middle;
+}
+
+
+.header-item-text {
+    z-index: 4;
+    text-decoration: none;
+    color: yellow;
+}
+
+.header-item:hover {
+    z-index: 4;
+    /* opacity: 80%; */
+    background-color: rgba(59, 75, 172, 0.438);
+}
+
+
+.home-icon-container {
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+
+    margin: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 6%;
+}
+
+.home-icon {
+    max-width: 100%;
+}
+
+.search-field-container {
+    text-decoration: none;
+    color: rgb(78, 93, 231);
+
+    margin: 10px;
+    width:fit-content;
+    display: inline-flex;
+    flex-direction: column;
+    outline: none;
+    vertical-align: middle;
+    max-height: 1.5em;
+}   
+
+.search-field {
+    height: 1.5em;
+    text-align: left;
+
+    box-shadow: white, 2px;
+    background-color: black;
+    cursor: pointer;
+    vertical-align: middle;
+
+    border: solid 3px;
+    border-color: white;
+    border-radius: 7px;
+
+    cursor: pointer;
+    color: white;
+
+    font-weight: bold;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.search-field:focus {
+    border: none;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: rgb(153, 176, 236);
+}
+
+.search-button{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: black;
+    vertical-align: middle;
+    background-color: black;
+    max-height: 1.5em;
+}
+
+.search-icon {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: black;
+    color: black;
+    max-height: 1.5em;
+    vertical-align: middle;
+}

@@ -13,7 +13,8 @@ class Home extends React.Component {
 
     render(){
         return (
-            <>
+            <div className="home-main">  
+            
                 <Header />
                 <Background />
                 <div className="fade"></div>
@@ -55,7 +56,7 @@ class Home extends React.Component {
                     </div>
 
                 </section>
-            </>
+            </div>
         )
     }
 }

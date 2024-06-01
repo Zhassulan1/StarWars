@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 import React from "react";
-import styles from './styles.css'
 
 import Header from "./header";
 import Background from "./background";

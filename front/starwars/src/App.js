@@ -18,6 +18,13 @@ import PlanetDetail from "./components/planet-detail";
 
 import Search from "./components/search";
 import './App.css';
+import './styles/main.css'
+import './styles/home.css'
+import './styles/background-stars.css'
+import './styles/header.css'
+import './styles/item.css'
+import './styles/search.css'
+import './styles/details.css'
 
 export default function App() {
   return (

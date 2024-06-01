@@ -1,0 +1,50 @@
+.links-title {
+    text-decoration: none;
+    color: #feda4a;
+    margin: 10px;
+    margin-top: 5%;
+    width: 40%;
+    font-size: 2em;
+    text-align: left;
+}
+
+
+.search-item {
+    text-decoration: none;
+    color: rgb(255, 251, 0);
+
+    margin: 10px;
+    width: 40%;
+    display:inline-block;
+
+    border: none;
+    border-radius: 50px;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+.search-item-text {    
+    text-decoration: none;
+    color: rgb(255, 238, 0);
+    text-align: left;
+}
+
+.search-item-text:hover {
+    opacity: 80%;
+    background-color: rgba(65, 90, 230, 0.281);
+}
+
+
+.search-list {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+
+.search-detail{
+    text-align:left;
+    width: 40%;
+}

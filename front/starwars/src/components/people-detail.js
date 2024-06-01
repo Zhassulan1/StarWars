@@ -20,7 +20,6 @@ function PeopleDetail() {
         })
     }, [peopleId])
 
-    // console.log(info)
     return (
         <>
             <Header />

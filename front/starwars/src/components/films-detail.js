@@ -3,7 +3,6 @@ import axios from "axios";
 
 import Header from "./header";
 import React, { useEffect, useState } from "react";
-import styles from './styles.css'
 import Background from "./background";
 
 const SITE_URL = "http://localhost:3000/";

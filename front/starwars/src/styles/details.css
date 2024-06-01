@@ -1,0 +1,11 @@
+.detail-container {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.detail {
+    text-align:left;
+    width: 30%;
+}

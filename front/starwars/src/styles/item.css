@@ -1,0 +1,28 @@
+.item {
+    text-decoration: none;
+    color: rgb(255, 251, 0);
+
+    margin: 10px;
+    width: 20%;
+    display: inline-flex;
+    flex-direction: column;
+
+    border: none;
+    border-radius: 50px;
+    vertical-align: top;
+}
+.item:hover {
+    opacity: 80%;
+    background-color: rgba(65, 90, 230, 0.281);
+}
+
+
+.item-text {    
+    text-decoration: none;
+    color: rgb(255, 238, 0);
+}
+
+.item-text:hover {
+    opacity: 80%;
+    background-color: rgba(65, 90, 230, 0.281);
+}
