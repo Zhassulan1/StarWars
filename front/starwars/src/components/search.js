@@ -70,30 +70,40 @@ function Search() {
         <>
             <Header />
             <Background />
-            <div className="detail-container">
-                <div className="detail">
-                    <h2>Search Results</h2>
-                    <div className="links-container">
-                        <h3> People: <br /> </h3>
+            
+            <div className="search-detail">
+                <h2>Search Results</h2>
+                <div className="links-container">
+                    <h3 className="links-title"> People: <br /> </h3>
+                    <ul className="search-list">
                         {construct(people, "people", 29, "name")}
+                    </ul>
 
-                        <h3> Films: <br /> </h3>
+                    <h3 className="links-title"> Films: <br /> </h3>
+                    <ul className="search-list">
                         {construct(films, "films", 28, "title")}
+                    </ul>
 
-                        <h3> Starships: <br /> </h3>
+                    <h3 className="links-title"> Starships: <br /> </h3>
+                    <ul className="search-list">
                         {construct(starships, "starships", 32, "name")}
-                        
-                        <h3> Vehicles: <br /> </h3>
+                    </ul>
+                    
+                    <h3 className="links-title"> Vehicles: <br /> </h3>
+                    <ul className="search-list">
                         {construct(vehicles, "vehicles", 31, "name")}
+                    </ul>
+                    
+                    <h3 className="links-title"> Species: <br /> </h3>
+                    <ul className="search-list">
+                        {construct(species, "species", 30, "name")}
+                    </ul>
+                    
+                    <h3 className="links-title"> Planets: <br /> </h3>
+                    <ul className="search-list">
+                        { construct(planets, "planets", 30, "name") }
+                    </ul>
                         
-                        <h3> Species: <br /> </h3>
-                        {
-                            construct(species, "species", 30, "name")
-                        }
-                        <h3> Planets: <br /> </h3>
-                         { construct(planets, "planets", 30, "name") }
-                         
-                    </div>
                 </div>
             </div>
         </>
@@ -104,7 +114,9 @@ function construct(arr, itemName, sliceLen, nameKey) {
     if (arr.length) {
         return arr.map((item) => {
             return (
-                <Link className="item" to={`/${itemName}/${item.url.slice(sliceLen)}`}>{item[nameKey]}</Link>
+                <li className="search-item">
+                    <Link className="search-item-text" to={`/${itemName}/${item.url.slice(sliceLen)}`}>{item[nameKey]}</Link>
+                </li>
             )
         })
     } else return <div>No {itemName} found</div>

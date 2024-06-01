@@ -8,7 +8,7 @@ import Background from "./background";
 
 const BASE_URL = "http://localhost:3001/api/";
 
-class vehicles extends React.Component {  
+class Vehicles extends React.Component {  
     constructor(props) {
         super(props)
 
@@ -58,5 +58,5 @@ class vehicles extends React.Component {
     }
 }
 
-export default vehicles;
+export default Vehicles;
 

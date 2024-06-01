@@ -3,14 +3,28 @@
     margin: auto;
     text-align: center;
     color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 
 body {
     margin: auto;
-    background: linear-gradient(to right, #110e18 0%, #0d1b27 100%);
-    overflow: hidden;
+    background: linear-gradient(to right, #0c0a11 0%, #08121b 100%);
+    overflow-x: hidden;
 }
 
+
+li {
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150%;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: auto;
+}
 
 .main {
     display: -ms-flexbox;
@@ -20,12 +34,12 @@ body {
 
 /* Home page Effects */
 .fade {
+    z-index: 2;
     position: relative;
     width: 100%;
     min-height: 50vh;
     top: -100px;
     background-image: linear-gradient(0deg, transparent, black 75%);
-    z-index: 2;
 }
 
 .star-wars {
@@ -93,11 +107,13 @@ body {
     width: 10%;
     display: inline-flex;
     flex-direction: column;
-
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
     border: none;
-    border-radius: 5%;
+    border-radius: 8px;
     background-color: rgba(36, 42, 63, 0.705);
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 
@@ -107,18 +123,12 @@ body {
     color: yellow;
 }
 
-.header-item-text:hover {
+.header-item:hover {
+    z-index: 4;
     /* opacity: 80%; */
     background-color: rgba(59, 75, 172, 0.438);
 }
 
-.search-field {
-    text-align: left;
-    border: none;
-    border-radius: 0%;
-    outline: none;
-    cursor: pointer;
-}
 
 .home-icon-container {
     text-decoration: none;
@@ -134,23 +144,51 @@ body {
     max-width: 100%;
 }
 
-.search-icon {
-    max-width: 100%;
-}
-
-
-li {
+.search-field-container {
     text-decoration: none;
-    color: rgb(223, 221, 221);
+    color: rgb(78, 93, 231);
+
+    margin: 10px;
+    width:fit-content;
+    display: inline-flex;
+    flex-direction: column;
+    outline: none;
+    vertical-align: middle;
+    max-height: 1.5em;
+}   
+
+.search-field {
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: blue;
+    font-family: 'Pathway Gothic One', sans-serif;
+    background-color: #feda4a;
+    cursor: pointer;
+    height: 1.5em;
 }
 
-
-ul {
-    margin: auto;
-    text-align: center;
+.search-button{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: black;
+    vertical-align: middle;
+    background-color: black;
+    max-height: 1.5em;
 }
-
-
+.search-icon {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: black;
+    color: black;
+    max-height: 1.5em;
+    vertical-align: middle;
+}
 
 .detail-container {
     margin: auto;
@@ -164,18 +202,6 @@ ul {
     width: 30%;
 }
 
-.search-field-container {
-    text-decoration: none;
-    color: yellow;
-
-    margin: 10px;
-    width:fit-content;
-    display: inline-flex;
-    flex-direction: column;
-    outline: none;
-    vertical-align: top;
-}   
-
 .item {
     text-decoration: none;
     color: rgb(255, 251, 0);
@@ -186,10 +212,8 @@ ul {
     flex-direction: column;
 
     border: none;
-    /* border-color: rgba(220, 220, 220, 50%); */
     border-radius: 50px;
     vertical-align: top;
-    /* background-image: radial-gradient(circle, rgba(0, 0, 0, 0.712),  rgb(1, 60, 255)x); */
 }
 
 
@@ -204,6 +228,58 @@ ul {
 }
 
 
+
+
+.links-title {
+    text-decoration: none;
+    color: #feda4a;
+    margin: 10px;
+    margin-top: 5%;
+    width: 40%;
+    font-size: 2em;
+    text-align: left;
+}
+
+
+.search-item {
+    text-decoration: none;
+    color: rgb(255, 251, 0);
+
+    margin: 10px;
+    width: 40%;
+    display:inline-block;
+
+    border: none;
+    border-radius: 50px;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+.search-item-text {    
+    text-decoration: none;
+    color: rgb(255, 238, 0);
+    text-align: left;
+}
+
+.search-item-text:hover {
+    opacity: 80%;
+    background-color: rgba(65, 90, 230, 0.281);
+}
+
+
+.search-list {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+
+.search-detail{
+    text-align:left;
+    width: 40%;
+}
 /* Background stars */
     
 #stars {
@@ -257,9 +333,6 @@ ul {
     background: transparent;
     box-shadow: 402px 1645px #FFF , 550px 643px #FFF , 634px 725px #FFF , 1715px 1562px #FFF , 1981px 1501px #FFF , 1605px 878px #FFF , 1690px 1007px #FFF , 416px 1068px #FFF , 522px 1469px #FFF , 1811px 714px #FFF , 1584px 816px #FFF , 1560px 1492px #FFF , 1281px 1996px #FFF , 1341px 1602px #FFF , 974px 1758px #FFF , 1174px 424px #FFF , 1705px 7px #FFF , 945px 1080px #FFF , 274px 1885px #FFF , 512px 1679px #FFF , 572px 1110px #FFF , 666px 1073px #FFF , 1171px 95px #FFF , 697px 1877px #FFF , 1136px 513px #FFF , 552px 1434px #FFF , 1182px 529px #FFF , 375px 113px #FFF , 86px 161px #FFF , 1510px 252px #FFF , 1283px 14px #FFF , 210px 1581px #FFF , 1619px 1470px #FFF , 178px 334px #FFF , 1603px 73px #FFF , 1664px 1924px #FFF , 787px 1737px #FFF , 1437px 1178px #FFF , 668px 1824px #FFF , 921px 1665px #FFF , 1348px 1428px #FFF , 1326px 56px #FFF , 1809px 1008px #FFF , 1996px 819px #FFF , 1071px 726px #FFF , 134px 94px #FFF , 1079px 543px #FFF , 486px 1519px #FFF , 87px 1597px #FFF , 450px 582px #FFF , 697px 948px #FFF , 537px 1900px #FFF , 709px 42px #FFF , 1935px 1062px #FFF , 1335px 1343px #FFF , 823px 1411px #FFF , 321px 379px #FFF , 956px 683px #FFF , 662px 1992px #FFF , 1231px 1749px #FFF , 1398px 1743px #FFF , 292px 1513px #FFF , 1727px 66px #FFF , 487px 142px #FFF , 1602px 171px #FFF , 565px 1748px #FFF , 1755px 1997px #FFF , 1858px 493px #FFF , 154px 1205px #FFF , 1772px 190px #FFF , 892px 1669px #FFF , 1378px 546px #FFF , 939px 390px #FFF , 1417px 775px #FFF , 934px 1726px #FFF , 1666px 1950px #FFF , 1645px 1377px #FFF , 1630px 1518px #FFF , 1516px 889px #FFF , 1034px 1997px #FFF , 278px 1953px #FFF , 473px 267px #FFF , 203px 397px #FFF , 361px 612px #FFF , 1863px 1403px #FFF , 1430px 1150px #FFF , 447px 340px #FFF , 1943px 946px #FFF , 1301px 831px #FFF , 1904px 584px #FFF , 198px 637px #FFF , 906px 283px #FFF , 1671px 18px #FFF , 1741px 1914px #FFF , 612px 833px #FFF , 1149px 1874px #FFF , 97px 1814px #FFF , 1613px 1466px #FFF , 496px 724px #FFF , 768px 1216px #FFF;
 }
-  
-  
-  /* Animation */
   
 @keyframes animStar {
     0% {

@@ -1,4 +1,4 @@
-import i from "./assets/jedi1.png"
+import i from "../assets/jedi1.png"
 import Header from "./header";
 
 
