@@ -3,7 +3,7 @@ import axios from "axios";
 
 import Header from "./header";
 import React from "react";
-import styles from './styles.css'
+import Background from "./background";
 
 
 const BASE_URL = "http://localhost:3001/api/";
@@ -33,7 +33,7 @@ class Films extends React.Component {
         return (
             <>
                 <Header />
-
+                <Background />
                 <ul className="list">
                     {
                         this.state.films.map((film) => {

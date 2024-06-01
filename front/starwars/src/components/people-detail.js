@@ -3,8 +3,7 @@ import axios from "axios";
 
 import Header from "./header";
 import React, { useEffect, useState } from "react";
-import styles from './styles.css'
-
+import Background from "./background";
 
 const BASE_URL = "http://localhost:3001/api/";
 
@@ -25,6 +24,7 @@ function PeopleDetail() {
     return (
         <>
             <Header />
+            <Background />
             <div className="detail-container">
                 <div className="detail">
                     Person: {info.name} <br />

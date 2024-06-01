@@ -1,9 +1,9 @@
 import { Outlet, Link, useParams } from "react-router-dom";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 import Header from "./header";
-import React, { useEffect, useState } from "react";
-import styles from './styles.css'
+import Background from "./background";
 
 
 const BASE_URL = "http://localhost:3001/api/";
@@ -22,10 +22,10 @@ function SpeciesDetail() {
         })
     }, [SpeciesId])
 
-    // console.log(info)
     return (
         <>
             <Header />
+            <Background />
             <div className="detail-container">
                 <div className="detail">
                     Kind: {info.name} <br />

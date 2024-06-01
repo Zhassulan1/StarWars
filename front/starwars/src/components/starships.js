@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import axios from "axios";
+import React from "react";
 
 import Header from "./header";
-import React from "react";
-import styles from './styles.css'
+import Background from "./background";
 
 
 const BASE_URL = "http://localhost:3001/api/";
@@ -41,7 +41,7 @@ class starships extends React.Component {
         return (
             <>
                 <Header />
-
+                <Background />
                 <ul className="list">
                     {
                         this.state.starships.map((starship) => {

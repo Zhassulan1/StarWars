@@ -1,10 +1,9 @@
+import React, { useEffect, useState } from "react";
 import { Outlet, Link, useParams } from "react-router-dom";
 import axios from "axios";
 
 import Header from "./header";
-import React, { useEffect, useState } from "react";
-import styles from './styles.css'
-
+import Background from "./background";
 
 const BASE_URL = "http://localhost:3001/api/";
 
@@ -25,6 +24,7 @@ function StarshipDetail() {
     return (
         <>
             <Header />
+            <Background />
             <div className="detail-container">
                 <div className="detail">
                     Starship: {info.name} <br />

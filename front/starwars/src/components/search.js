@@ -1,8 +1,11 @@
-import Header from "./header";
 import { Link, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
+
+import Header from "./header";
+import Background from "./background";
+
 
 const BASE_URL = "http://localhost:3001/api/";
 
@@ -66,6 +69,7 @@ function Search() {
     return (
         <>
             <Header />
+            <Background />
             <div className="detail-container">
                 <div className="detail">
                     <h2>Search Results</h2>

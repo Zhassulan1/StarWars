@@ -4,6 +4,7 @@ import axios from "axios";
 import Header from "./header";
 import React, { useEffect, useState } from "react";
 import styles from './styles.css'
+import Background from "./background";
 
 const SITE_URL = "http://localhost:3000/";
 const BASE_URL = "http://localhost:3001/api/";
@@ -25,6 +26,7 @@ function FilmDetail() {
     return (
         <>
             <Header />
+            <Background />
             <div className="detail-container">
                 <div className="detail">
                     Film: {info.title} <br />

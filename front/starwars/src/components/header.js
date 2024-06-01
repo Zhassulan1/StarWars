@@ -17,8 +17,6 @@ class Header extends React.Component {
     return (
       <>
       <div className="header-container">
-
-        <nav>
           <ul>
             
             <li className="home-icon-container">
@@ -62,7 +60,6 @@ class Header extends React.Component {
             </li>
 
           </ul>
-        </nav>
 
         </div>
         <Outlet />

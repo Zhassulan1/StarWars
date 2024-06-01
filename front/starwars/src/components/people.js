@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-import Header from "./header";
 import React from "react";
 import styles from './styles.css'
 
+import Header from "./header";
+import Background from "./background";
 
 const BASE_URL = "http://localhost:3001/api/";
 
@@ -51,6 +52,9 @@ class People extends React.Component {
         return (
             <>
                 <Header />
+                <Background />
+
+                <div className="main">
 
                 <ul className="list">
                     {
@@ -62,7 +66,8 @@ class People extends React.Component {
                             )
                         })
                     }
-                </ul>
+                </ul>                
+                </div>
             </>
         )
     }
