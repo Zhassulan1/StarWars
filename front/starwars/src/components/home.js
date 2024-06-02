@@ -13,7 +13,7 @@ class Home extends React.Component {
 
     render(){
         return (
-            <div className="home-main">  
+            <div className="home-main hide-overflow">  
             
                 <Header />
                 <Background />

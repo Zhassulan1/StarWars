@@ -1,6 +1,5 @@
 .home-main {
     height: 100vh;
-    overflow: hidden;
 }
 
 
@@ -21,7 +20,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-
+    
     color: #feda4a;
     text-align: justify;
     font-family: 'Pathway Gothic One', sans-serif;
@@ -35,6 +34,7 @@
 .crawl {
     position: relative;
     top: 999px;
+    overflow-y:hidden;
     transform-origin: -10% 100%;
     animation: crawl 60s linear;
     animation-iteration-count: infinite;
@@ -49,6 +49,14 @@
     margin: 0 0 100px;
     text-transform:uppercase;
 }
+
+
+
+.hide-overflow {
+    overflow:hidden;
+}
+
+
 
 @keyframes crawl {
     0% {
