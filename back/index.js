@@ -8,16 +8,18 @@ app.use(cors())
 const BASE_URL = "https://swapi.dev/api/";
 
 app.get('/', (request, response) => {
+    const ipAddress = request.ip;
     response.send("Hello from the back end server!");
-    console.log(`GET /`);
+    console.log(`GET /   \nfrom ip: ${ipAddress}\n`);
     response.end();
 })
 
 
 app.get('/api/:item/page/:page', (request, response) => {
+    const ipAddress = request.ip;
     axios.get(`${BASE_URL}${request.params.item}?page=${request.params.page}`).then((res) => {
         response.send(res.data);
-        console.log(`GET api/${request.params.item}/page/${request.params.page}`);
+        console.log(`GET api/${request.params.item}/page/${request.params.page}  \nfrom ip: ${ipAddress}\n`);
         response.end();
     })
 })
@@ -26,9 +28,10 @@ app.get('/api/:item/page/:page', (request, response) => {
 
 // Details
 app.get('/api/:item/:itemId', (request, response) => {
+    const ipAddress = request.ip;
     axios.get(`${BASE_URL}${request.params.item}/${request.params.itemId}`).then((res) => {
         response.send(res.data);
-        console.log(`GET api/${request.params.item}/${request.params.itemId}`);
+        console.log(`GET api/${request.params.item}/${request.params.itemId}  \nfrom ip: ${ipAddress}\n`);
         response.end();
     })
 })
@@ -36,9 +39,10 @@ app.get('/api/:item/:itemId', (request, response) => {
 
 // Search
 app.get('/api/:item/search/:query', (request, response) => {
+    const ipAddress = request.ip;
     axios.get(`${BASE_URL}${request.params.item}/?search=${request.params.query}`).then((res) => {
         response.send(res.data);
-        console.log(`GET api/${request.params.item}/search/${request.params.query}`);
+        console.log(`GET api/${request.params.item}/search/${request.params.query}  \nfrom ip: ${ipAddress}\n`);
         response.end();
     })
 })
