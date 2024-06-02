@@ -113,8 +113,8 @@ function construct(arr, itemName, sliceLen, nameKey) {
     if (arr.length) {
         return arr.map((item) => {
             return (
-                <Link className="search-item-text" to={`/${itemName}/${item.url.slice(sliceLen)}`}>
-                    <li className="search-item">
+                <Link className="search-item" to={`/${itemName}/${item.url.slice(sliceLen)}`}>
+                    <li className="search-item-text">
                         {item[nameKey]}
                     </li>
                 </Link>

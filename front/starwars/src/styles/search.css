@@ -11,16 +11,18 @@
 
 .search-item {
     text-decoration: none;
+    text-align: left;
     color: rgb(255, 251, 0);
 
     margin: 10px;
+    padding-left: 2%;
+    
     width: 40%;
     display:inline-block;
 
     border: none;
     border-radius: 50px;
     vertical-align: top;
-    text-align: left;
 }
 
 
@@ -30,7 +32,7 @@
     text-align: left;
 }
 
-.search-item-text:hover {
+.search-item:hover {
     opacity: 80%;
     background-color: rgba(65, 90, 230, 0.281);
 }
